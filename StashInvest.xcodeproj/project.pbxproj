@@ -1,0 +1,961 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		69A16BEA25AE058D003A6638 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16BE925AE058D003A6638 /* AppDelegate.swift */; };
+		69A16BF125AE058D003A6638 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A16BEF25AE058D003A6638 /* Main.storyboard */; };
+		69A16BF325AE0590003A6638 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 69A16BF225AE0590003A6638 /* Assets.xcassets */; };
+		69A16BF625AE0590003A6638 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A16BF425AE0590003A6638 /* LaunchScreen.storyboard */; };
+		69A16C0125AE0590003A6638 /* StashInvestTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16C0025AE0590003A6638 /* StashInvestTests.swift */; };
+		69A16C0C25AE0590003A6638 /* StashInvestUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16C0B25AE0590003A6638 /* StashInvestUITests.swift */; };
+		69A16C2925AE07EC003A6638 /* Achievement.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 69A16C2325AE07EC003A6638 /* Achievement.storyboard */; };
+		69A16C2A25AE07EC003A6638 /* AchievementInterfaces.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16C2425AE07EC003A6638 /* AchievementInterfaces.swift */; };
+		69A16C2B25AE07EC003A6638 /* AchievementPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16C2525AE07EC003A6638 /* AchievementPresenter.swift */; };
+		69A16C2C25AE07EC003A6638 /* AchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16C2625AE07EC003A6638 /* AchievementViewController.swift */; };
+		69A16C2D25AE07EC003A6638 /* AchievementInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16C2725AE07EC003A6638 /* AchievementInteractor.swift */; };
+		69A16C2E25AE07EC003A6638 /* AchievementWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16C2825AE07EC003A6638 /* AchievementWireframe.swift */; };
+		69A16C3B25AE0843003A6638 /* ViewInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16C3725AE0843003A6638 /* ViewInterface.swift */; };
+		69A16C3C25AE0843003A6638 /* BaseWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16C3825AE0843003A6638 /* BaseWireframe.swift */; };
+		69A16C3D25AE0843003A6638 /* InteractorInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16C3925AE0843003A6638 /* InteractorInterface.swift */; };
+		69A16C3E25AE0843003A6638 /* PresenterInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16C3A25AE0843003A6638 /* PresenterInterface.swift */; };
+		69A16C4C25AE2B10003A6638 /* UIColor+random.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16C4425AE2B10003A6638 /* UIColor+random.swift */; };
+		69A16C4D25AE2B10003A6638 /* UIStoryboard+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16C4525AE2B10003A6638 /* UIStoryboard+extension.swift */; };
+		69A16C4E25AE2B10003A6638 /* UIView+outline.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16C4625AE2B10003A6638 /* UIView+outline.swift */; };
+		69A16C4F25AE2B10003A6638 /* Array+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16C4725AE2B10003A6638 /* Array+extension.swift */; };
+		69A16C5025AE2B10003A6638 /* NetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16C4925AE2B10003A6638 /* NetworkClient.swift */; };
+		69A16C5125AE2B10003A6638 /* NetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16C4A25AE2B10003A6638 /* NetworkManager.swift */; };
+		69A16C5225AE2B10003A6638 /* StashNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16C4B25AE2B10003A6638 /* StashNetworkClient.swift */; };
+		69A16C6125AE5A07003A6638 /* AchievementTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16C6025AE5A07003A6638 /* AchievementTableViewCell.swift */; };
+		69A16C6625AFED16003A6638 /* CircleLevelView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16C6525AFED16003A6638 /* CircleLevelView.swift */; };
+		69A16C6B25AFED5E003A6638 /* CircleLevelView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 69A16C6A25AFED5E003A6638 /* CircleLevelView.xib */; };
+		69A16C7125AFEECD003A6638 /* Achievement.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16C7025AFEECD003A6638 /* Achievement.swift */; };
+		69A16C7625AFEF82003A6638 /* achievements.json in Resources */ = {isa = PBXBuildFile; fileRef = 69A16C7525AFEF82003A6638 /* achievements.json */; };
+		69A16C7C25AFF06A003A6638 /* AchievementNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16C7B25AFF06A003A6638 /* AchievementNetworkManager.swift */; };
+		69A16C8B25AFFC5A003A6638 /* .swiftlint.yml in Resources */ = {isa = PBXBuildFile; fileRef = 69A16C8A25AFFC5A003A6638 /* .swiftlint.yml */; };
+		69A16CAE25B007FB003A6638 /* MockAchievementPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16CA925B007FB003A6638 /* MockAchievementPresenter.swift */; };
+		69A16CAF25B007FB003A6638 /* MockAchievementViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16CAA25B007FB003A6638 /* MockAchievementViewController.swift */; };
+		69A16CB025B007FB003A6638 /* MockAchievementInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16CAB25B007FB003A6638 /* MockAchievementInteractor.swift */; };
+		69A16CB125B007FB003A6638 /* MockAchievementWireframe.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16CAC25B007FB003A6638 /* MockAchievementWireframe.swift */; };
+		69A16CBA25B008C0003A6638 /* MockNetworkClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16CB925B008C0003A6638 /* MockNetworkClient.swift */; };
+		69A16CC225B0090A003A6638 /* MockAchievementNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16CC125B0090A003A6638 /* MockAchievementNetworkManager.swift */; };
+		69A16CC725B00CE4003A6638 /* MockNetworkManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16CC625B00CE4003A6638 /* MockNetworkManager.swift */; };
+		69A16CCF25B01535003A6638 /* MockAchievementInterface.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16CCE25B01535003A6638 /* MockAchievementInterface.swift */; };
+		69A16CD825B016CE003A6638 /* XCTestCase+extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 69A16CD725B016CE003A6638 /* XCTestCase+extension.swift */; };
+		69A16CE825B01AFC003A6638 /* achievementsTest.json in Resources */ = {isa = PBXBuildFile; fileRef = 69A16CE725B01AFC003A6638 /* achievementsTest.json */; };
+		E1584DCE47CB6A31EAB0CB4A /* Pods_StashInvest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0DA9FB6363B1A21DA7A4E5 /* Pods_StashInvest.framework */; };
+		F741D62846CB48E03E6F237A /* Pods_StashInvestTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C2B19C9CAA6F2E825C446AC /* Pods_StashInvestTests.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		69A16BFD25AE0590003A6638 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69A16BDE25AE058D003A6638 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69A16BE525AE058D003A6638;
+			remoteInfo = StashInvest;
+		};
+		69A16C0825AE0590003A6638 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 69A16BDE25AE058D003A6638 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 69A16BE525AE058D003A6638;
+			remoteInfo = StashInvest;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1C2B19C9CAA6F2E825C446AC /* Pods_StashInvestTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StashInvestTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F0DA9FB6363B1A21DA7A4E5 /* Pods_StashInvest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_StashInvest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		404ED23C7B9FFCFF5F0BDC3B /* Pods-StashInvestTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashInvestTests.release.xcconfig"; path = "Target Support Files/Pods-StashInvestTests/Pods-StashInvestTests.release.xcconfig"; sourceTree = "<group>"; };
+		69A16BE625AE058D003A6638 /* StashInvest.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StashInvest.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		69A16BE925AE058D003A6638 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		69A16BF025AE058D003A6638 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		69A16BF225AE0590003A6638 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		69A16BF525AE0590003A6638 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		69A16BF725AE0590003A6638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69A16BFC25AE0590003A6638 /* StashInvestTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashInvestTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69A16C0025AE0590003A6638 /* StashInvestTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashInvestTests.swift; sourceTree = "<group>"; };
+		69A16C0225AE0590003A6638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69A16C0725AE0590003A6638 /* StashInvestUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = StashInvestUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		69A16C0B25AE0590003A6638 /* StashInvestUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StashInvestUITests.swift; sourceTree = "<group>"; };
+		69A16C0D25AE0590003A6638 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		69A16C2325AE07EC003A6638 /* Achievement.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Achievement.storyboard; sourceTree = "<group>"; };
+		69A16C2425AE07EC003A6638 /* AchievementInterfaces.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementInterfaces.swift; sourceTree = "<group>"; };
+		69A16C2525AE07EC003A6638 /* AchievementPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementPresenter.swift; sourceTree = "<group>"; };
+		69A16C2625AE07EC003A6638 /* AchievementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementViewController.swift; sourceTree = "<group>"; };
+		69A16C2725AE07EC003A6638 /* AchievementInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementInteractor.swift; sourceTree = "<group>"; };
+		69A16C2825AE07EC003A6638 /* AchievementWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementWireframe.swift; sourceTree = "<group>"; };
+		69A16C3725AE0843003A6638 /* ViewInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewInterface.swift; sourceTree = "<group>"; };
+		69A16C3825AE0843003A6638 /* BaseWireframe.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BaseWireframe.swift; sourceTree = "<group>"; };
+		69A16C3925AE0843003A6638 /* InteractorInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = InteractorInterface.swift; sourceTree = "<group>"; };
+		69A16C3A25AE0843003A6638 /* PresenterInterface.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PresenterInterface.swift; sourceTree = "<group>"; };
+		69A16C4425AE2B10003A6638 /* UIColor+random.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+random.swift"; sourceTree = "<group>"; };
+		69A16C4525AE2B10003A6638 /* UIStoryboard+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIStoryboard+extension.swift"; sourceTree = "<group>"; };
+		69A16C4625AE2B10003A6638 /* UIView+outline.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+outline.swift"; sourceTree = "<group>"; };
+		69A16C4725AE2B10003A6638 /* Array+extension.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+extension.swift"; sourceTree = "<group>"; };
+		69A16C4925AE2B10003A6638 /* NetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkClient.swift; sourceTree = "<group>"; };
+		69A16C4A25AE2B10003A6638 /* NetworkManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NetworkManager.swift; sourceTree = "<group>"; };
+		69A16C4B25AE2B10003A6638 /* StashNetworkClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = StashNetworkClient.swift; sourceTree = "<group>"; };
+		69A16C6025AE5A07003A6638 /* AchievementTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementTableViewCell.swift; sourceTree = "<group>"; };
+		69A16C6525AFED16003A6638 /* CircleLevelView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircleLevelView.swift; sourceTree = "<group>"; };
+		69A16C6A25AFED5E003A6638 /* CircleLevelView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CircleLevelView.xib; sourceTree = "<group>"; };
+		69A16C7025AFEECD003A6638 /* Achievement.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Achievement.swift; sourceTree = "<group>"; };
+		69A16C7525AFEF82003A6638 /* achievements.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = achievements.json; sourceTree = "<group>"; };
+		69A16C7B25AFF06A003A6638 /* AchievementNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AchievementNetworkManager.swift; sourceTree = "<group>"; };
+		69A16C8A25AFFC5A003A6638 /* .swiftlint.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; name = .swiftlint.yml; path = StashInvest/Application/.swiftlint.yml; sourceTree = SOURCE_ROOT; };
+		69A16CA925B007FB003A6638 /* MockAchievementPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAchievementPresenter.swift; sourceTree = "<group>"; };
+		69A16CAA25B007FB003A6638 /* MockAchievementViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAchievementViewController.swift; sourceTree = "<group>"; };
+		69A16CAB25B007FB003A6638 /* MockAchievementInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAchievementInteractor.swift; sourceTree = "<group>"; };
+		69A16CAC25B007FB003A6638 /* MockAchievementWireframe.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAchievementWireframe.swift; sourceTree = "<group>"; };
+		69A16CB925B008C0003A6638 /* MockNetworkClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkClient.swift; sourceTree = "<group>"; };
+		69A16CC125B0090A003A6638 /* MockAchievementNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAchievementNetworkManager.swift; sourceTree = "<group>"; };
+		69A16CC625B00CE4003A6638 /* MockNetworkManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockNetworkManager.swift; sourceTree = "<group>"; };
+		69A16CCE25B01535003A6638 /* MockAchievementInterface.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MockAchievementInterface.swift; sourceTree = "<group>"; };
+		69A16CD725B016CE003A6638 /* XCTestCase+extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "XCTestCase+extension.swift"; sourceTree = "<group>"; };
+		69A16CE725B01AFC003A6638 /* achievementsTest.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = achievementsTest.json; sourceTree = "<group>"; };
+		6A36B627F44F7D5362E82129 /* Pods-StashInvest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashInvest.release.xcconfig"; path = "Target Support Files/Pods-StashInvest/Pods-StashInvest.release.xcconfig"; sourceTree = "<group>"; };
+		AB424D81303CCE6B5EE97DE3 /* Pods-StashInvestTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashInvestTests.debug.xcconfig"; path = "Target Support Files/Pods-StashInvestTests/Pods-StashInvestTests.debug.xcconfig"; sourceTree = "<group>"; };
+		BADE62C90031DAAB8BBDA715 /* Pods-StashInvest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-StashInvest.debug.xcconfig"; path = "Target Support Files/Pods-StashInvest/Pods-StashInvest.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		69A16BE325AE058D003A6638 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E1584DCE47CB6A31EAB0CB4A /* Pods_StashInvest.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A16BF925AE0590003A6638 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F741D62846CB48E03E6F237A /* Pods_StashInvestTests.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A16C0425AE0590003A6638 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		2A8078E9CE4CC11138B9BDD9 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				BADE62C90031DAAB8BBDA715 /* Pods-StashInvest.debug.xcconfig */,
+				6A36B627F44F7D5362E82129 /* Pods-StashInvest.release.xcconfig */,
+				AB424D81303CCE6B5EE97DE3 /* Pods-StashInvestTests.debug.xcconfig */,
+				404ED23C7B9FFCFF5F0BDC3B /* Pods-StashInvestTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		69A16BDD25AE058D003A6638 = {
+			isa = PBXGroup;
+			children = (
+				69A16BE825AE058D003A6638 /* StashInvest */,
+				69A16BFF25AE0590003A6638 /* StashInvestTests */,
+				69A16C0A25AE0590003A6638 /* StashInvestUITests */,
+				69A16BE725AE058D003A6638 /* Products */,
+				2A8078E9CE4CC11138B9BDD9 /* Pods */,
+				E2A7815E72FF8A524F8FFE64 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		69A16BE725AE058D003A6638 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				69A16BE625AE058D003A6638 /* StashInvest.app */,
+				69A16BFC25AE0590003A6638 /* StashInvestTests.xctest */,
+				69A16C0725AE0590003A6638 /* StashInvestUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		69A16BE825AE058D003A6638 /* StashInvest */ = {
+			isa = PBXGroup;
+			children = (
+				69A16C2125AE0735003A6638 /* Application */,
+				69A16C2025AE0725003A6638 /* Resources */,
+				69A16C1F25AE071C003A6638 /* Modules */,
+				69A16C3525AE0805003A6638 /* Common */,
+			);
+			path = StashInvest;
+			sourceTree = "<group>";
+		};
+		69A16BFF25AE0590003A6638 /* StashInvestTests */ = {
+			isa = PBXGroup;
+			children = (
+				69A16CE625B01AC7003A6638 /* MockResource */,
+				69A16CD625B016A8003A6638 /* MockExtension */,
+				69A16CB825B00882003A6638 /* MockNetwork */,
+				69A16CA725B007D5003A6638 /* MockAchievement */,
+				69A16C0025AE0590003A6638 /* StashInvestTests.swift */,
+				69A16C0225AE0590003A6638 /* Info.plist */,
+			);
+			path = StashInvestTests;
+			sourceTree = "<group>";
+		};
+		69A16C0A25AE0590003A6638 /* StashInvestUITests */ = {
+			isa = PBXGroup;
+			children = (
+				69A16C0B25AE0590003A6638 /* StashInvestUITests.swift */,
+				69A16C0D25AE0590003A6638 /* Info.plist */,
+			);
+			path = StashInvestUITests;
+			sourceTree = "<group>";
+		};
+		69A16C1F25AE071C003A6638 /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				69A16C2225AE0764003A6638 /* Achievement */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		69A16C2025AE0725003A6638 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				69A16C7525AFEF82003A6638 /* achievements.json */,
+				69A16BEF25AE058D003A6638 /* Main.storyboard */,
+				69A16BF425AE0590003A6638 /* LaunchScreen.storyboard */,
+				69A16BF225AE0590003A6638 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		69A16C2125AE0735003A6638 /* Application */ = {
+			isa = PBXGroup;
+			children = (
+				69A16BE925AE058D003A6638 /* AppDelegate.swift */,
+				69A16C8A25AFFC5A003A6638 /* .swiftlint.yml */,
+				69A16BF725AE0590003A6638 /* Info.plist */,
+			);
+			path = Application;
+			sourceTree = "<group>";
+		};
+		69A16C2225AE0764003A6638 /* Achievement */ = {
+			isa = PBXGroup;
+			children = (
+				69A16C7A25AFF04E003A6638 /* Network */,
+				69A16C6F25AFEEB8003A6638 /* Entity */,
+				69A16C5F25AE59E9003A6638 /* View */,
+				69A16C2325AE07EC003A6638 /* Achievement.storyboard */,
+				69A16C2425AE07EC003A6638 /* AchievementInterfaces.swift */,
+				69A16C2525AE07EC003A6638 /* AchievementPresenter.swift */,
+				69A16C2625AE07EC003A6638 /* AchievementViewController.swift */,
+				69A16C2725AE07EC003A6638 /* AchievementInteractor.swift */,
+				69A16C2825AE07EC003A6638 /* AchievementWireframe.swift */,
+			);
+			path = Achievement;
+			sourceTree = "<group>";
+		};
+		69A16C3525AE0805003A6638 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				69A16C3625AE080E003A6638 /* VIPER */,
+				69A16C4325AE2B10003A6638 /* Extension */,
+				69A16C4825AE2B10003A6638 /* Network */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		69A16C3625AE080E003A6638 /* VIPER */ = {
+			isa = PBXGroup;
+			children = (
+				69A16C3825AE0843003A6638 /* BaseWireframe.swift */,
+				69A16C3925AE0843003A6638 /* InteractorInterface.swift */,
+				69A16C3A25AE0843003A6638 /* PresenterInterface.swift */,
+				69A16C3725AE0843003A6638 /* ViewInterface.swift */,
+			);
+			path = VIPER;
+			sourceTree = "<group>";
+		};
+		69A16C4325AE2B10003A6638 /* Extension */ = {
+			isa = PBXGroup;
+			children = (
+				69A16C4425AE2B10003A6638 /* UIColor+random.swift */,
+				69A16C4525AE2B10003A6638 /* UIStoryboard+extension.swift */,
+				69A16C4625AE2B10003A6638 /* UIView+outline.swift */,
+				69A16C4725AE2B10003A6638 /* Array+extension.swift */,
+			);
+			path = Extension;
+			sourceTree = "<group>";
+		};
+		69A16C4825AE2B10003A6638 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				69A16C4925AE2B10003A6638 /* NetworkClient.swift */,
+				69A16C4A25AE2B10003A6638 /* NetworkManager.swift */,
+				69A16C4B25AE2B10003A6638 /* StashNetworkClient.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		69A16C5F25AE59E9003A6638 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				69A16C6025AE5A07003A6638 /* AchievementTableViewCell.swift */,
+				69A16C6525AFED16003A6638 /* CircleLevelView.swift */,
+				69A16C6A25AFED5E003A6638 /* CircleLevelView.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		69A16C6F25AFEEB8003A6638 /* Entity */ = {
+			isa = PBXGroup;
+			children = (
+				69A16C7025AFEECD003A6638 /* Achievement.swift */,
+			);
+			path = Entity;
+			sourceTree = "<group>";
+		};
+		69A16C7A25AFF04E003A6638 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				69A16C7B25AFF06A003A6638 /* AchievementNetworkManager.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		69A16CA725B007D5003A6638 /* MockAchievement */ = {
+			isa = PBXGroup;
+			children = (
+				69A16CCE25B01535003A6638 /* MockAchievementInterface.swift */,
+				69A16CA925B007FB003A6638 /* MockAchievementPresenter.swift */,
+				69A16CAA25B007FB003A6638 /* MockAchievementViewController.swift */,
+				69A16CAB25B007FB003A6638 /* MockAchievementInteractor.swift */,
+				69A16CAC25B007FB003A6638 /* MockAchievementWireframe.swift */,
+				69A16CC125B0090A003A6638 /* MockAchievementNetworkManager.swift */,
+			);
+			path = MockAchievement;
+			sourceTree = "<group>";
+		};
+		69A16CB825B00882003A6638 /* MockNetwork */ = {
+			isa = PBXGroup;
+			children = (
+				69A16CB925B008C0003A6638 /* MockNetworkClient.swift */,
+				69A16CC625B00CE4003A6638 /* MockNetworkManager.swift */,
+			);
+			path = MockNetwork;
+			sourceTree = "<group>";
+		};
+		69A16CD625B016A8003A6638 /* MockExtension */ = {
+			isa = PBXGroup;
+			children = (
+				69A16CD725B016CE003A6638 /* XCTestCase+extension.swift */,
+			);
+			path = MockExtension;
+			sourceTree = "<group>";
+		};
+		69A16CE625B01AC7003A6638 /* MockResource */ = {
+			isa = PBXGroup;
+			children = (
+				69A16CE725B01AFC003A6638 /* achievementsTest.json */,
+			);
+			path = MockResource;
+			sourceTree = "<group>";
+		};
+		E2A7815E72FF8A524F8FFE64 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F0DA9FB6363B1A21DA7A4E5 /* Pods_StashInvest.framework */,
+				1C2B19C9CAA6F2E825C446AC /* Pods_StashInvestTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		69A16BE525AE058D003A6638 /* StashInvest */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69A16C1025AE0590003A6638 /* Build configuration list for PBXNativeTarget "StashInvest" */;
+			buildPhases = (
+				33AA36A30046848EFE5AAB1F /* [CP] Check Pods Manifest.lock */,
+				69A16BE225AE058D003A6638 /* Sources */,
+				69A16BE325AE058D003A6638 /* Frameworks */,
+				69A16BE425AE058D003A6638 /* Resources */,
+				60DECC5C1BCD0BBF29108829 /* [CP] Embed Pods Frameworks */,
+				69A16C8F25AFFC6F003A6638 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StashInvest;
+			productName = StashInvest;
+			productReference = 69A16BE625AE058D003A6638 /* StashInvest.app */;
+			productType = "com.apple.product-type.application";
+		};
+		69A16BFB25AE0590003A6638 /* StashInvestTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69A16C1325AE0590003A6638 /* Build configuration list for PBXNativeTarget "StashInvestTests" */;
+			buildPhases = (
+				A9500EA545A6FEDD57466495 /* [CP] Check Pods Manifest.lock */,
+				69A16BF825AE0590003A6638 /* Sources */,
+				69A16BF925AE0590003A6638 /* Frameworks */,
+				69A16BFA25AE0590003A6638 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69A16BFE25AE0590003A6638 /* PBXTargetDependency */,
+			);
+			name = StashInvestTests;
+			productName = StashInvestTests;
+			productReference = 69A16BFC25AE0590003A6638 /* StashInvestTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		69A16C0625AE0590003A6638 /* StashInvestUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 69A16C1625AE0590003A6638 /* Build configuration list for PBXNativeTarget "StashInvestUITests" */;
+			buildPhases = (
+				69A16C0325AE0590003A6638 /* Sources */,
+				69A16C0425AE0590003A6638 /* Frameworks */,
+				69A16C0525AE0590003A6638 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				69A16C0925AE0590003A6638 /* PBXTargetDependency */,
+			);
+			name = StashInvestUITests;
+			productName = StashInvestUITests;
+			productReference = 69A16C0725AE0590003A6638 /* StashInvestUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		69A16BDE25AE058D003A6638 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1230;
+				LastUpgradeCheck = 1230;
+				TargetAttributes = {
+					69A16BE525AE058D003A6638 = {
+						CreatedOnToolsVersion = 12.3;
+					};
+					69A16BFB25AE0590003A6638 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 69A16BE525AE058D003A6638;
+					};
+					69A16C0625AE0590003A6638 = {
+						CreatedOnToolsVersion = 12.3;
+						TestTargetID = 69A16BE525AE058D003A6638;
+					};
+				};
+			};
+			buildConfigurationList = 69A16BE125AE058D003A6638 /* Build configuration list for PBXProject "StashInvest" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 69A16BDD25AE058D003A6638;
+			productRefGroup = 69A16BE725AE058D003A6638 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				69A16BE525AE058D003A6638 /* StashInvest */,
+				69A16BFB25AE0590003A6638 /* StashInvestTests */,
+				69A16C0625AE0590003A6638 /* StashInvestUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		69A16BE425AE058D003A6638 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69A16BF625AE0590003A6638 /* LaunchScreen.storyboard in Resources */,
+				69A16BF325AE0590003A6638 /* Assets.xcassets in Resources */,
+				69A16C2925AE07EC003A6638 /* Achievement.storyboard in Resources */,
+				69A16C8B25AFFC5A003A6638 /* .swiftlint.yml in Resources */,
+				69A16C7625AFEF82003A6638 /* achievements.json in Resources */,
+				69A16C6B25AFED5E003A6638 /* CircleLevelView.xib in Resources */,
+				69A16BF125AE058D003A6638 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A16BFA25AE0590003A6638 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69A16CE825B01AFC003A6638 /* achievementsTest.json in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A16C0525AE0590003A6638 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		33AA36A30046848EFE5AAB1F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StashInvest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		60DECC5C1BCD0BBF29108829 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StashInvest/Pods-StashInvest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-StashInvest/Pods-StashInvest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-StashInvest/Pods-StashInvest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		69A16C8F25AFFC6F003A6638 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\n${PODS_ROOT}/SwiftLint/swiftlint autocorrect\n";
+		};
+		A9500EA545A6FEDD57466495 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-StashInvestTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		69A16BE225AE058D003A6638 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69A16C3C25AE0843003A6638 /* BaseWireframe.swift in Sources */,
+				69A16C7125AFEECD003A6638 /* Achievement.swift in Sources */,
+				69A16C3E25AE0843003A6638 /* PresenterInterface.swift in Sources */,
+				69A16C2E25AE07EC003A6638 /* AchievementWireframe.swift in Sources */,
+				69A16C4C25AE2B10003A6638 /* UIColor+random.swift in Sources */,
+				69A16C6625AFED16003A6638 /* CircleLevelView.swift in Sources */,
+				69A16C3B25AE0843003A6638 /* ViewInterface.swift in Sources */,
+				69A16BEA25AE058D003A6638 /* AppDelegate.swift in Sources */,
+				69A16C5025AE2B10003A6638 /* NetworkClient.swift in Sources */,
+				69A16C6125AE5A07003A6638 /* AchievementTableViewCell.swift in Sources */,
+				69A16C4E25AE2B10003A6638 /* UIView+outline.swift in Sources */,
+				69A16C2D25AE07EC003A6638 /* AchievementInteractor.swift in Sources */,
+				69A16C5125AE2B10003A6638 /* NetworkManager.swift in Sources */,
+				69A16C7C25AFF06A003A6638 /* AchievementNetworkManager.swift in Sources */,
+				69A16C4D25AE2B10003A6638 /* UIStoryboard+extension.swift in Sources */,
+				69A16C3D25AE0843003A6638 /* InteractorInterface.swift in Sources */,
+				69A16C5225AE2B10003A6638 /* StashNetworkClient.swift in Sources */,
+				69A16C2B25AE07EC003A6638 /* AchievementPresenter.swift in Sources */,
+				69A16C4F25AE2B10003A6638 /* Array+extension.swift in Sources */,
+				69A16C2A25AE07EC003A6638 /* AchievementInterfaces.swift in Sources */,
+				69A16C2C25AE07EC003A6638 /* AchievementViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A16BF825AE0590003A6638 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69A16CAF25B007FB003A6638 /* MockAchievementViewController.swift in Sources */,
+				69A16C0125AE0590003A6638 /* StashInvestTests.swift in Sources */,
+				69A16CB125B007FB003A6638 /* MockAchievementWireframe.swift in Sources */,
+				69A16CC725B00CE4003A6638 /* MockNetworkManager.swift in Sources */,
+				69A16CAE25B007FB003A6638 /* MockAchievementPresenter.swift in Sources */,
+				69A16CBA25B008C0003A6638 /* MockNetworkClient.swift in Sources */,
+				69A16CCF25B01535003A6638 /* MockAchievementInterface.swift in Sources */,
+				69A16CC225B0090A003A6638 /* MockAchievementNetworkManager.swift in Sources */,
+				69A16CD825B016CE003A6638 /* XCTestCase+extension.swift in Sources */,
+				69A16CB025B007FB003A6638 /* MockAchievementInteractor.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		69A16C0325AE0590003A6638 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				69A16C0C25AE0590003A6638 /* StashInvestUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		69A16BFE25AE0590003A6638 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69A16BE525AE058D003A6638 /* StashInvest */;
+			targetProxy = 69A16BFD25AE0590003A6638 /* PBXContainerItemProxy */;
+		};
+		69A16C0925AE0590003A6638 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 69A16BE525AE058D003A6638 /* StashInvest */;
+			targetProxy = 69A16C0825AE0590003A6638 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		69A16BEF25AE058D003A6638 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69A16BF025AE058D003A6638 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		69A16BF425AE0590003A6638 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				69A16BF525AE0590003A6638 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		69A16C0E25AE0590003A6638 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		69A16C0F25AE0590003A6638 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		69A16C1125AE0590003A6638 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = BADE62C90031DAAB8BBDA715 /* Pods-StashInvest.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StashInvest/Application/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chanickpark.StashInvest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		69A16C1225AE0590003A6638 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6A36B627F44F7D5362E82129 /* Pods-StashInvest.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StashInvest/Application/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chanickpark.StashInvest;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		69A16C1425AE0590003A6638 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = AB424D81303CCE6B5EE97DE3 /* Pods-StashInvestTests.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StashInvestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chanickpark.StashInvestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StashInvest.app/StashInvest";
+			};
+			name = Debug;
+		};
+		69A16C1525AE0590003A6638 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 404ED23C7B9FFCFF5F0BDC3B /* Pods-StashInvestTests.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StashInvestTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.3;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chanickpark.StashInvestTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/StashInvest.app/StashInvest";
+			};
+			name = Release;
+		};
+		69A16C1725AE0590003A6638 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StashInvestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chanickpark.StashInvestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StashInvest;
+			};
+			name = Debug;
+		};
+		69A16C1825AE0590003A6638 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = StashInvestUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.chanickpark.StashInvestUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = StashInvest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		69A16BE125AE058D003A6638 /* Build configuration list for PBXProject "StashInvest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69A16C0E25AE0590003A6638 /* Debug */,
+				69A16C0F25AE0590003A6638 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69A16C1025AE0590003A6638 /* Build configuration list for PBXNativeTarget "StashInvest" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69A16C1125AE0590003A6638 /* Debug */,
+				69A16C1225AE0590003A6638 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69A16C1325AE0590003A6638 /* Build configuration list for PBXNativeTarget "StashInvestTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69A16C1425AE0590003A6638 /* Debug */,
+				69A16C1525AE0590003A6638 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		69A16C1625AE0590003A6638 /* Build configuration list for PBXNativeTarget "StashInvestUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				69A16C1725AE0590003A6638 /* Debug */,
+				69A16C1825AE0590003A6638 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 69A16BDE25AE058D003A6638 /* Project object */;
+}
